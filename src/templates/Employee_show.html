@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Table</title>
+</head>
+<body>
+    <h1>Employee</h1>
+    {% for employee in employees %}
+    Employee Name::<h5>{{employee.name}}</h5>
+    Employee ID::<h5>{{employee._id}}</h5>
+    Employee Contact Number::<h5>{{employee.Contact_number}}</h5>
+    Employee Gende::<h5>{{employee.Gender}}</h5>
+    Employee Password::<h5>{{employee.password}}</h5>
+    Employee date of Birth::<h5>{{employee.Date_of_Birth}}</h5>
+    Employee Date of Joining::<h5>{{employee.Date_of_Joining}}</h5>
+
+    <hr>
+    {% endfor %}
+</body>
+</html>
+

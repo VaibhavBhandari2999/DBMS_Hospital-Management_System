@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Doctor Table</title>
+</head>
+<body>
+    <center><h1>Doctor</h1></center>
+    {% for doctor in doctors %}
+    Doctor id::<h5>{{doctor._id}}</h5>
+    Doctor Employee::<h5>{{doctor.Employee_id}}</h5>
+    Doctor's Department_id<h5>{{doctor.Department_id}}</h5>
+
+
+    <hr>
+    {% endfor %}
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Equipment Table</title>
+</head>
+<body>
+    <center><h1>Equipment</h1></center>
+    {% for equipment in equipments %}
+    Equipment id::<h5>{{equipment._id}}</h5>
+    Equipment Name::<h5>{{equipment.name}}</h5>
+    Equipment Type<h5>{{equipment.type}}</h5>
+    Equipment's Department_id<h5>{{equipment.Department_id}}</h5>
+
+
+    <hr>
+    {% endfor %}
+</body>
+</html>
+

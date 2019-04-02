@@ -1,0 +1,453 @@
+{% extends "base.html" %}
+{% block content %}
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/css/styles.css" type="text/css"/>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+</head>
+<style>
+    .dropdown {
+        padding-left: 50px;
+        float: left;
+        overflow: hidden;
+    }
+
+    .dropdown .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #4CAF50;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content form div{
+        float: none;
+        color: #f0f0f0;
+        font-weight: bold;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown-content form div:hover {
+        background-color: #669D48;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+  background: #4CAF50;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #4CAF50;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #4CAF50;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+  text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+</style>
+<script>
+function submitform1()
+{
+document.getElementById("myForm1").submit();
+}
+function submitform2()
+{
+document.getElementById("myForm2").submit();
+}
+function submitform3()
+{
+document.getElementById("myForm3").submit();
+}
+function submitform4()
+{
+document.getElementById("myForm4").submit();
+}
+function submitform5()
+{
+document.getElementById("myForm5").submit();
+}
+function submitform6()
+{
+document.getElementById("myForm6").submit();
+}
+function submitform7()
+{
+document.getElementById("myForm7").submit();
+}
+function submitform8()
+{
+document.getElementById("myForm8").submit();
+}
+function submitform9()
+{
+document.getElementById("myForm9").submit();
+}
+function submitform10()
+{
+document.getElementById("myForm10").submit();
+}
+function submitform11()
+{
+document.getElementById("myForm11").submit();
+}
+function submitform12()
+{
+document.getElementById("myForm12").submit();
+}
+function submitform13()
+{
+document.getElementById("myForm13").submit();
+}
+function submitform14()
+{
+document.getElementById("myForm14").submit();
+}
+function submitform15()
+{
+document.getElementById("myForm15").submit();
+}
+function submitform16()
+{
+document.getElementById("myForm16").submit();
+}
+function submitform17()
+{
+document.getElementById("myForm17").submit();
+}
+function submitform18()
+{
+document.getElementById("myForm18").submit();
+}
+
+</script>
+<body>
+
+<section id="body" class="width" style="background-color: #84C639">
+    <aside id="sidebar" class="column-left">
+
+        <!--THE LEFT SIDE MENU IS DUE TO THE ABOVE CODE...!!-->
+        <nav id="mainnav" style="background-color: #84C639">
+            <ul>
+                <!--li class="dropdown"-->
+                <li class="dropdown" style="text-align: right"><a href="#">Employee</a>
+
+                    <!--   <button class="dropbtn">Employee
+                           <i class="fa fa-caret-down"></i>
+                       </button-->
+                    <div class="dropdown-content">
+                        <form id="myForm1" action="/Emp_add">
+                            <div onclick="submitform1()">Add Employee</div>
+                        </form>
+                        <form id="myForm2" action="/Emp_del">
+                            <div onclick="submitform2()">Delete Employee</div>
+                        </form>
+                        <form id="myForm3" action="/Emp_upd">
+                            <div onclick="submitform3()">Update Employee</div>
+                        </form>
+                        <a href="#">Show Employees</a>
+                    </div>
+                    <!--/li--></li>
+                <!--<li><a href="Defaulters_Table.htm">Defaulters Table</a></li>-->
+                <li class="pad"><a href="#"></a></li>
+                <li class="dropdown" style="text-align: right"><a href="#">Patient</a>
+
+                    <!--   <button class="dropbtn">Employee
+                           <i class="fa fa-caret-down"></i>
+                       </button-->
+                    <div class="dropdown-content">
+                        <form id="myForm4" action="/Pat_add">
+                            <div onclick="submitform4()">Add Patient</div>
+                        </form>
+                        <form id="myForm5" action="/Pat_del">
+                            <div onclick="submitform5()">Delete Patient</div>
+                        </form>
+                        <form id="myForm6" action="/Pat_upd">
+                            <div onclick="submitform6()">Updating Patient</div>
+                        </form>
+                        <a href="#">Show Patient</a>
+                    </div>
+                    <!--/li--></li>
+                <!--<li><a href="Defaulters_Table.htm">Defaulters Table</a></li>-->
+                <li class="pad"><a href="#"></a></li>
+                <li class="dropdown" style="text-align: right"><a href="#">Department</a>
+
+                    <!--   <button class="dropbtn">Employee
+                           <i class="fa fa-caret-down"></i>
+                       </button-->
+                    <div class="dropdown-content">
+                        <form id="myForm7" action="/Dep_add">
+                            <div onclick="submitform7()">Add Department</div>
+                        </form>
+                        <form id="myForm8" action="/Dep_del">
+                            <div onclick="submitform8()">Delete Department</div>
+                        </form>
+                        <form id="myForm9" action="/Dep_upd">
+                            <div onclick="submitform9()">Updating Department</div>
+                        </form>
+                        <a href="#">Show Department</a>
+                    </div>
+                    <!--/li--></li>
+                <!--<li><a href="Defaulters_Table.htm">Defaulters Table</a></li>-->
+                <li class="pad"><a href="#"></a></li>
+                <li class="dropdown" style="text-align: right"><a href="#">Room</a>
+
+                    <!--   <button class="dropbtn">Employee
+                           <i class="fa fa-caret-down"></i>
+                       </button-->
+                    <div class="dropdown-content">
+
+                        <form id="myForm10" action="/Room_add">
+                            <div onclick="submitform10()">Add Room</div>
+                        </form>
+                        <form id="myForm11" action="/Room_del">
+                            <div onclick="submitform11()">Delete Room</div>
+                        </form>
+                        <form id="myForm12" action="/Room_upd">
+                            <div onclick="submitform12()">Updating Room</div>
+                        </form>
+                        <a href="#">Show Room</a>
+                    </div>
+                    <!--/li--></li>
+                <!--<li><a href="Defaulters_Table.htm">Defaulters Table</a></li>-->
+                <li class="pad"><a href="#"></a></li>
+                <li class="dropdown" style="text-align: right"><a href="#">Equipment</a>
+
+                    <!--   <button class="dropbtn">Employee
+                           <i class="fa fa-caret-down"></i>
+                       </button-->
+                    <div class="dropdown-content">
+                        <form id="myForm13" action="/Equip_add">
+                            <div onclick="submitform13()">Add Equipment</div>
+                        </form>
+                        <form id="myForm14" action="/Equip_del">
+                            <div onclick="submitform14()">Delete Equipment</div>
+                        </form>
+                        <form id="myForm15" action="/Equip_upd">
+                            <div onclick="submitform15()">Updating Equipment</div>
+                        </form>
+                        <a href="#">Show Equipment</a>
+                    </div>
+                    <!--/li--></li>
+                <!--<li><a href="Defaulters_Table.htm">Defaulters Table</a></li>-->
+                <li class="pad"><a href="#"></a></li>
+                <li class="dropdown" style="text-align: right"><a href="#">Doctor</a>
+
+                    <!--   <button class="dropbtn">Employee
+                           <i class="fa fa-caret-down"></i>
+                       </button-->
+                    <div class="dropdown-content">
+                        <form id="myForm16" action="/Doc_add">
+                            <div onclick="submitform16()">Add Doctor</div>
+                        </form>
+                        <form id="myForm17" action="/Doc_del">
+                            <div onclick="submitform17()">Delete Doctor</div>
+                        </form>
+                        <form id="myForm18" action="/Doc_upd">
+                            <div onclick="submitform18()">Updating Doctor</div>
+                        </form>
+                        <a href="#">Show Doctot</a>
+                    </div>
+                    <!--/li--></li>
+                <!--<li><a href="Defaulters_Table.htm">Defaulters Table</a></li>-->
+                <li class="pad"><a href="#"></a></li>
+
+
+            </ul>
+        </nav>
+
+
+    </aside>
+
+    <section id="content" class="column-right">
+
+        <article>
+
+            <blockquote><p><h5 style="margin-bottom: 5px">{{ message }}</h5>
+                -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+            </blockquote>
+            <p></p>
+<div class="container">
+  <form id="contact" action="" method="post">
+    <h3>Employee</h3>
+    <h4>Adding a new Employee</h4>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Employee ID" type="text" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Gender" type="text" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      Enter date of joining::<input placeholder="Enter your date of Joining" type="date" tabindex="5" required>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+    </fieldset>
+  </form>
+</div>
+
+        </article>
+
+    </section>
+
+    <div class="clear"></div>
+
+</section>
+</body>
+{% endblock %}

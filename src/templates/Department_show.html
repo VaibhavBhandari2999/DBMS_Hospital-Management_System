@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Department Table</title>
+</head>
+<body>
+    <center><h1>Departments</h1></center>
+    {% for department in departments %}
+    Department Name<h5>{{department.Department_Name}}</h5>
+    Department id<h5>{{department._id}}</h5>
+    Department Fields<h5>{{department.Fields}}</h5>
+    <hr>
+    {% endfor %}
+</body>
+</html>
