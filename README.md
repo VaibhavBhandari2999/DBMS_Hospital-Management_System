@@ -14,3 +14,4 @@ Each Employee, Patient, Department, Room, Equipment, Doctor has the option to:
 This project was built using HTML,CSS and Javascript in the fromt end. The database was MongoDB while Flask( a python framework) wa used   
 as the connections.
 
+The ER diagram for the project is ![here](https://github.com/VaibhavBhandari2999/DBMS_Hospital-Management_System/blob/master/src/static/images/ER.JPG)
